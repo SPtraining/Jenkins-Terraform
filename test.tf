@@ -13,7 +13,7 @@ terraform {
 
 
 provider "aws" {
-  region     = "us-east-2b"
+  region     = "us-east-2"
 }
 
 resource "aws_instance" "myec2" {
