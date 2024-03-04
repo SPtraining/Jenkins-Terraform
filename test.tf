@@ -13,15 +13,15 @@ terraform {
 
 
 provider "aws" {
-  region     = "us-east-1"
+  region     = "us-east-2"
 }
 
 resource "aws_instance" "myec2" {
    ami = "ami-09988af04120b3591"
    instance_type = "t2.micro"
-   key_name = "Ansible"
+   key_name = "linuxt2medium"
    tags = {
-      Name = "Example"
+      Name = "LinuxAuto"
    }
 
 }
